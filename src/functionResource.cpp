@@ -1,9 +1,6 @@
 #include <iostream>
 #include <string>
-#include <cmath>
-#include <regex>
 #include <cstdlib>
-#include <algorithm>
 #include <fstream>
 #include <cassert>
 #include <windows.h>
@@ -30,7 +27,7 @@ class filefunctions{
                     cout << '\n';
                 }
             }
-        infile.close();
+            infile.close();
         }
 };
 
