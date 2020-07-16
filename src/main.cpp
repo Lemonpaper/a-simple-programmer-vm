@@ -4,7 +4,7 @@
  **  |  , |  _| , | __| \\// | __|                      *
  **  |  __|_| |___|__ |  ||  |__ |                      *
  **  |_|          |___|  ||  |___|                      *
- **  prosys CLI version 1.1 prosys by elytraflyer.      *
+ **  prosys CLI version 1.2 prosys by elytraflyer.      *
  * *****************************************************
  * 
  */
@@ -50,11 +50,11 @@ void process_cmd(){
         ff.readTxt(fpath);
     }
     else if(osfunctions.cmd == "help" || osfunctions.cmd == "HELP"){
-        cout  << "\tcommand lists in prosys:\n exit\n usrname\n pcname\n powershell\n cmd \n help\n\t help in cmd:\n";
+        cout  << "\tcommand lists in prosys:\n exit\n usrname\n pcname\n powershell\n cmd \n help\n minesweeper\n cls\n cmd\n file\t(read only)\n\t help in cmd:\n";
         system("help");
     }
     else if(osfunctions.cmd == "version" || osfunctions.cmd == "VERSION"){
-        cout << "this is prosys version 1.1,build 1035." << endl;
+        cout << "this is prosys version 1.2,build 1050." << endl;
     }
     else{
         cout << '\"' << osfunctions.cmd << '\"' << " : no such command.\n";
@@ -67,13 +67,12 @@ void process(){
     process_cmd();
 }
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv){
     osfunctions.setFontColor("yellow");
 	cout << " ---- --- --- ---  -  -  --- \n";
     cout << "|  , |  _| , | __| \\ // | __|\n";
     cout << "|  __|_| |___|__ |  ||  |__ |\n";
-    cout << "|_|          |___|  ||  |___|\n\t prosys CLI version 1.1\n\t prosys by elytraflyer.\n";
+    cout << "|_|          |___|  ||  |___|\n\t prosys CLI version 1.2\n\t prosys by elytraflyer.\n";
     osfunctions.setFontColor("plain");
     while(true)
         process();
